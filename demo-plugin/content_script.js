@@ -1,9 +1,11 @@
 const gmailConfig = {
     mailWindowSelector: `.GP`,
+    clippySize: 120,
 };
 
 const yahooConfig = {
     mailWindowSelector: `#editor-container`,
+    clippySize: 200,
 };
 
 const siteConfig = getSiteConfig();
@@ -41,7 +43,7 @@ function appendClippy(mailWindow) {
     clippyImg.src = `chrome-extension://${chrome.runtime.id}/assets/clippy.gif`;
     clippyImg.style.cssText = `position: absolute; bottom: 0; right: 0;`;
 
-    const clippySize = 120;
+    const clippySize = siteConfig.clippySize;
 
     clippyImg.width = clippySize;
     clippyImg.height = clippySize;
