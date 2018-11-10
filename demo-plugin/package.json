@@ -1,0 +1,12 @@
+{
+    "name": "email-clippy-plugin",
+    "description": "",
+    "author": "",
+    "version": "1.0.0",
+    "scripts": {},
+    "dependencies": {},
+    "devDependencies": {
+        "eslint": "^4.16.0",
+        "eslint-config-textio-base": "0.0.35"
+    }
+}
