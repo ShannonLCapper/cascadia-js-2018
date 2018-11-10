@@ -2,6 +2,10 @@ const gmailConfig = {
     mailWindowSelector: `.GP`,
 };
 
+const yahooConfig = {
+    mailWindowSelector: `#editor-container`,
+};
+
 const siteConfig = getSiteConfig();
 
 if (siteConfig) {
@@ -12,6 +16,8 @@ function getSiteConfig() {
     switch (window.location.hostname) {
         case `mail.google.com`:
             return gmailConfig;
+        case `mail.yahoo.com`:
+            return yahooConfig;
         default:
             return null;
     }
